@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: admin
+
+app:
+  kafka:
+    bootstrap-servers: kafka.lavacro.net:9092
