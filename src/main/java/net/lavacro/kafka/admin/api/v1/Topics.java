@@ -14,6 +14,7 @@ public class Topics {
 
 	@GetMapping
 	public void topics() {
+		topicsService.clusters();
 		topicsService.topics();
 	}
 }
