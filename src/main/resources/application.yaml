@@ -2,6 +2,17 @@ spring:
   application:
     name: admin
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
 app:
   kafka:
     bootstrap-servers: kafka.lavacro.net:9092
+    metrics:
+      interval: 30000
